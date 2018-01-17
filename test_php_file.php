@@ -1,10 +1,10 @@
-@extends('layouts.dashboard.page')
+<?php
+    $greeting ="Hello, Friends\n";
+    $secondary_greeting ="How are you today?\n";
 
-@section('content')
-    <div class="container-fluid">
-      <div class="row">
-      </div>
-    </div>
-@endsection
-
- 
+    echo $greeting . "\n";
+    echo $greeting{0} . "\n";
+    $greeting{0} = J;
+    echo $greeting . "\n";
+    echo $secondary_greeting;
+?>
